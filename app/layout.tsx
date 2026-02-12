@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Lora, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -13,15 +12,6 @@ const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["400", "500", "600", "700"],
 });
-
-export const metadata: Metadata = {
-  title: "Home - Zen2Spirit",
-  description:
-    "Een vzw met als maatschappelijk doel mensen op holistische wijze te helpen hun welzijn te vergroten door o.a. energetische healingen, hypnose & meditaties aan te bieden.",
-  icons: {
-    icon: "/logo-zen2spirit.svg",
-  },
-};
 
 export default function RootLayout({
   children,
