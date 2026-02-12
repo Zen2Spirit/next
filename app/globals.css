@@ -9,6 +9,7 @@
   --light-gray: #ccd1c9;
   --light: #f8fff4;
   --dark-gray: #848484;
+  --secondary: #028090;
 }
 
 @theme inline {
@@ -20,6 +21,7 @@
   --color-light-gray: var(--light-gray);
   --color-light: var(--light);
   --color-dark-gray: var(--dark-gray);
+  --color-accent: var(--secondary);
   --font-title: var(--font-lora);
   --font-text: var(--font-poppins);
 }
@@ -60,5 +62,6 @@ h6 {
 .infoHeader {
   background-image: url("/page-banner.webp");
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-attachment: fixed;
 }
