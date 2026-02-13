@@ -1,5 +1,6 @@
 "use client";
 
+import { slugify } from "@/lib/slugify";
 import { therapies } from "@/lib/therapies/therapies";
 import { Button } from "@/modules/common/button";
 import Image from "next/image";
@@ -83,7 +84,7 @@ export function Home() {
             <div>
               <Button
                 label="Kom meer over ons te weten"
-                onClick={() => router.push("/over-ons")}
+                onClick={() => router.push("/about")}
               />
             </div>
           </div>
@@ -103,9 +104,10 @@ export function Home() {
           <p>Ontdek onze verschillende therapieën en behandelingen</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {therapies.map((therapy) => (
-              <div
+              <Link
+                href={`/therapies#${slugify(therapy.name)}`}
                 key={therapy.name}
-                className="bg-white p-4 rounded-lg shadow-md flex flex-col gap-6"
+                className="bg-white p-4 rounded-lg shadow-md flex flex-col gap-6 hover:shadow-lg transition-shadow"
               >
                 <Image
                   src={therapy.imageUrl}
@@ -123,13 +125,13 @@ export function Home() {
                     </span>
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div>
             <Button
               label="Krijg meer info"
-              onClick={() => router.push("/therapieen")}
+              onClick={() => router.push("/therapies")}
             />
           </div>
         </div>

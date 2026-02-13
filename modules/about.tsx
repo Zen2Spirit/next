@@ -41,30 +41,29 @@ export function About() {
             height={300}
           />
           <p className="my-4">
-            In deze <strong>VZW</strong> bieden wij onze expertise aan om het
-            <strong>welzijn</strong>
-            van andere mensen te verhogen op een{" "}
-            <strong>holistische manier</strong>
-            die complete aanvulbaar is met de klassieke geneeskunde.
+            In deze <strong>VZW</strong> bieden wij onze expertise aan om het{" "}
+            <strong>welzijn</strong> van andere mensen te verhogen op een{" "}
+            <strong>holistische manier</strong> die complete aanvulbaar is met
+            de klassieke geneeskunde.
           </p>
           <p className="my-4">
-            Wij geloven dat het lichaam meer is dan lichaam en geest alleen en
-            dat alles met elkaar <strong>verbonden</strong> is en een invloed
-            heeft op elkaar. Planten, dieren, mensen maar ook energieën en
-            zielen zien wij als onderdeel van een groter geheel. Lichaam, geest,
+            Wij geloven dat het lichaam meer is dan lichaam en geest alleen en{" "}
+            dat alles met elkaar <strong>verbonden</strong> is en een invloed{" "}
+            heeft op elkaar. Planten, dieren, mensen maar ook energieën en{" "}
+            zielen zien wij als onderdeel van een groter geheel. Lichaam, geest,{" "}
             gevoelens, gedachten en verlangens: <strong>alles is 1</strong>.
           </p>
           <p className="my-4">
-            Daarom besteden we niet alleen aandacht aan het fysieke en het
-            mentale, maar ook aan het emotionele, het energetische en het
+            Daarom besteden we niet alleen aandacht aan het fysieke en het{" "}
+            mentale, maar ook aan het emotionele, het energetische en het{" "}
             spirituele aspect van ons leven.
           </p>
           <p className="my-4">
             De technieken die we gebruiken zijn gevarieerd;{" "}
             <strong>Peter</strong> is vooral actief als{" "}
-            <strong>hypnotherapeut</strong>, wandelcoach en burnout coach
+            <strong>hypnotherapeut</strong>, wandelcoach en burnout coach{" "}
             terwijl <strong>Marian</strong> zich vooral richt op{" "}
-            <strong>energetische behandelingen</strong> waarbij reiki,
+            <strong>energetische behandelingen</strong> waarbij reiki,{" "}
             aromatherapie en kristaltherapie verenigd worden.
           </p>
           <p className="my-4">
@@ -77,7 +76,7 @@ export function About() {
             <Link className="text-primary" href="/events">
               cursussen of workshops
             </Link>{" "}
-            om de kennis te delen die we met de loop van de jaren al vergaard
+            om de kennis te delen die we met de loop van de jaren al vergaard{" "}
             hebben.
           </p>
           <p className="my-4">
@@ -100,7 +99,7 @@ export function About() {
           <p className="my-4">
             Naast de dienstverlening worden er ook{" "}
             <strong>producten verkocht</strong> die kunnen helpen je beter te{" "}
-            voelen. Dit gaat van kristaljuwelen, tot orgonites, olierollers of
+            voelen. Dit gaat van kristaljuwelen, tot orgonites, olierollers of{" "}
             andere zaken die door vrijwilligers kunnen worden{" "}
             <strong>geschonken of door onszelf worden gemaakt</strong>.
           </p>
@@ -122,8 +121,8 @@ export function About() {
             .
           </p>
           <p className="my-4">
-            Ben jij <strong>creatief</strong> en wil je graag de
-            <strong>VZW steunen</strong> maar toch een vergoeding krijgen voor
+            Ben jij <strong>creatief</strong> en wil je graag de{" "}
+            <strong>VZW steunen</strong> maar toch een vergoeding krijgen voor{" "}
             bvb de door jou gebruikte materialen?{" "}
             <Link className="text-primary" href="/contact">
               Geef ons zeker een seintje
@@ -131,19 +130,18 @@ export function About() {
             .
           </p>
           <p className="my-4">
-            We hebben al een prachtige collectie met de hand gemaakte
+            We hebben al een prachtige collectie met de hand gemaakte{" "}
             kristaljuwelen in ons aanbod. Of{" "}
-            <strong>volgde je cursussen</strong> en wil je graag
-            <strong>mensen helpen</strong> met jouw
+            <strong>volgde je cursussen</strong> en wil je graag{" "}
+            <strong>mensen helpen</strong> met jouw{" "}
             <strong>ervaringen en opleidingen</strong>
-            maar heb je al een ander vast werk en kom je in aanmerking voor het
+            maar heb je al een ander vast werk en kom je in aanmerking voor het{" "}
             <strong>vrijwilligerstatuut</strong>?{" "}
             <Link className="text-primary" href="/contact">
               Contacteer ons
             </Link>{" "}
-            dan zeker ook. Vandaag werken we al samen met een
-            <strong>vrijwilligster</strong>
-            die gespecialiseerd is in{" "}
+            dan zeker ook. Vandaag werken we al samen met een{" "}
+            <strong>vrijwilligster</strong> die gespecialiseerd is in{" "}
             <strong>rouw-en verliesbegeleiding</strong>.
           </p>
         </article>
