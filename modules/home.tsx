@@ -46,6 +46,7 @@ export function Home() {
                   />
                 </svg>
               }
+              onClick={() => router.push("/contact")}
             />
           </div>
         </main>
