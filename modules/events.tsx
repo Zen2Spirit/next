@@ -41,10 +41,10 @@ export function Events({ events }: EventProps) {
                 om later nog eens terug te komen!
               </p>
               <p className="text-dark-gray col-span-full w-2/3">
-                Heb je zelf een evenement dat je graag zou willen delen? Aarzel
-                niet en neem{" "}
+                Heb je zelf een idee voor een evenement dat je graag door
+                Zen2Spirit georganiseerd zou willen zien? Aarzel niet en{" "}
                 <Link href="/contact" className="text-primary">
-                  contact op met ons
+                  neem contact op met ons
                 </Link>
                 !
               </p>
