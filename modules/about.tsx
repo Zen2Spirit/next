@@ -36,7 +36,7 @@ export function About() {
           <Image
             src="/peter-marian-zen2spirit.webp"
             alt="Peter en Marian van Zen2Spirit"
-            className="float-left mr-4 mb-4 rounded-lg"
+            className="md:float-left mr-4 mb-4 rounded-lg"
             width={400}
             height={300}
           />
