@@ -16,9 +16,21 @@ async function fetchFacebookEvents() {
 }
 
 export const metadata: Metadata = {
-  title: "Events - Zen2Spirit",
+  title: "Events en Activiteiten - Zen2Spirit",
   description:
-    "Een vzw met als maatschappelijk doel mensen op holistische wijze te helpen hun welzijn te vergroten door o.a. energetische healingen, hypnose & meditaties aan te bieden.",
+    "Ontdek aankomende events, workshops en groepsactiviteiten van Zen2Spirit. Deelnemen aan onze holistische bijeenkomsten.",
+  keywords: [
+    "events",
+    "workshops",
+    "activiteiten",
+    "groepslessen",
+    "meditatie",
+  ],
+  openGraph: {
+    title: "Events en Activiteiten - Zen2Spirit",
+    description: "Bekijk al onze geplande events en groepsactiviteiten.",
+    url: "https://zen2spirit.be/events",
+  },
 };
 
 export default async function EventsPage() {

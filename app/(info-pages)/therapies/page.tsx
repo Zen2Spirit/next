@@ -1,12 +1,28 @@
 import { Therapies } from "@/modules/therapies";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Therapieën - Zen2Spirit",
+  title: "Onze Therapieën - Zen2Spirit",
   description:
-    "Een vzw met als maatschappelijk doel mensen op holistische wijze te helpen hun welzijn te vergroten door o.a. energetische healingen, hypnose & meditaties aan te bieden.",
+    "Ontdek onze holistische therapieën: energetische healing, hypnose, meditatie, tarot, soul therapy, walk coaching, groepsmeditatie en conversatietherapie.",
+  keywords: [
+    "therapieën",
+    "energetische healing",
+    "hypnose",
+    "meditatie",
+    "tarot",
+    "soul therapy",
+    "walk coaching",
+    "holistische behandeling",
+  ],
+  openGraph: {
+    title: "Onze Therapieën - Zen2Spirit",
+    description:
+      "Kies de therapie die het beste bij u past. Alle behandelingen zijn gericht op uw welzijn.",
+    url: "https://zen2spirit.be/therapies",
+  },
 };
 
-export default function AboutPage() {
+export default function TherapiesPage() {
   return <Therapies />;
 }
