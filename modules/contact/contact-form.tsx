@@ -12,6 +12,7 @@ type Inputs = {
 
 export function ContactForm() {
   const [error, setError] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -20,15 +21,22 @@ export function ContactForm() {
   } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    const result = await sendEmail(data);
-
-    if (!result.success) {
-      setError(result.error || "Failed to send email");
-      return;
-    }
-
-    reset();
+    setIsLoading(true);
     setError(null);
+
+    try {
+      const result = await sendEmail(data);
+
+      if (!result.success) {
+        setError(result.error || "Failed to send email");
+        return;
+      }
+
+      reset();
+      setError(null);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -40,14 +48,16 @@ export function ContactForm() {
         <input
           type="text"
           required
-          className="grow p-3 border border-gray-300 rounded-lg"
+          disabled={isLoading}
+          className="grow p-3 border border-gray-300 rounded-lg disabled:bg-gray-100 disabled:cursor-not-allowed"
           placeholder="Naam"
           {...register("name")}
         />
         <input
           type="email"
           required
-          className="grow p-3 border border-gray-300 rounded-lg"
+          disabled={isLoading}
+          className="grow p-3 border border-gray-300 rounded-lg disabled:bg-gray-100 disabled:cursor-not-allowed"
           placeholder="Email"
           {...register("email")}
         />
@@ -55,13 +65,15 @@ export function ContactForm() {
       <input
         type="text"
         required
-        className="p-3 border border-gray-300 rounded-lg"
+        disabled={isLoading}
+        className="p-3 border border-gray-300 rounded-lg disabled:bg-gray-100 disabled:cursor-not-allowed"
         placeholder="Onderwerp"
         {...register("subject")}
       />
       <textarea
         required
-        className="p-3 border border-gray-300 rounded-lg"
+        disabled={isLoading}
+        className="p-3 border border-gray-300 rounded-lg disabled:bg-gray-100 disabled:cursor-not-allowed"
         rows={10}
         placeholder="Bericht"
         {...register("message")}
@@ -80,7 +92,12 @@ export function ContactForm() {
       )}
       {error && <span className="text-red-500">{error}</span>}
       <div>
-        <Button type="submit" label="Verzenden" />
+        <Button
+          type="submit"
+          label="Verzenden"
+          disabled={isLoading}
+          isLoading={isLoading}
+        />
       </div>
     </form>
   );
