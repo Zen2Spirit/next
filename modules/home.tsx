@@ -71,8 +71,8 @@ export function Home() {
       </div>
 
       <section id="about" className="w-full">
-        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-20 flex flex-wrap gap-15 justify-between">
-          <div className="flex flex-col gap-6">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-20 flex flex-wrap gap-10 justify-between">
+          <div className="flex flex-col gap-6 lg:w-full xl:w-1/2">
             <h2 className="text-4xl font-bold">Over ons</h2>
             <p>Kom meer te weten over Zen2Spirit</p>
             <p className="text-lg text-dark-gray">
