@@ -16,7 +16,7 @@ export function Contact() {
               Vul ons contact formulier in of contacteer ons langs onderstaande
               middelen.
             </p>
-            <p>We antwoorden gemiddeld binnin de 24 uur.</p>
+            <p>We antwoorden gemiddeld binnen de 24 uur.</p>
             <div className="flex flex-col gap-4">
               <p className="flex items-center gap-2">
                 <span className="text-primary">
