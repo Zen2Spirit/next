@@ -8,7 +8,7 @@ import { routes } from "@/lib/routes";
 export function Footer() {
   return (
     <footer className="w-full py-10 bg-dark text-gray-50">
-      <div className="container mx-auto flex justify-between">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 flex justify-between flex-wrap gap-10">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2">
             <LogoZen2Spirit className="w-12 h-12" />
@@ -59,7 +59,7 @@ export function Footer() {
             </Link>
           </div>
         </div>
-        <div className="flex gap-15">
+        <div className="flex gap-15 flex-wrap">
           <div className="flex flex-col gap-2">
             <h4 className="font-semibold text-primary">Overview</h4>
             <ul className="flex flex-col gap-1">

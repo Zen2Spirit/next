@@ -8,7 +8,7 @@ export function About() {
   return (
     <>
       <Header title="Over ons" />
-      <section className="container mx-auto my-10">
+      <section className="container mx-auto px-4 sm:px-6 md:px-8 my-10">
         <h2 className="text-5xl font-bold my-8">Visie en Team</h2>
         <article>
           <p className="my-4">
@@ -145,7 +145,7 @@ export function About() {
             <strong>rouw-en verliesbegeleiding</strong>.
           </p>
         </article>
-        <div className="flex gap-10 mt-10">
+        <div className="flex flex-wrap gap-10 mt-10">
           <Image
             className="rounded-lg"
             src="/peter-marian-hypnose.webp"

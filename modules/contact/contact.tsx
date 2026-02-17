@@ -7,7 +7,7 @@ export function Contact() {
   return (
     <>
       <Header title="Contact" />
-      <section className="container mx-auto py-12 flex justify-between">
+      <section className="container mx-auto px-4 sm:px-6 md:px-8 py-12 flex flex-wrap gap-12 justify-between">
         <div className="flex flex-col gap-6">
           <span className="text-primary font-bold">Heb je een vraag?</span>
           <h2 className="text-4xl font-bold">Contacteer ons!</h2>

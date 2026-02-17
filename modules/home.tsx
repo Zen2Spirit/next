@@ -13,7 +13,7 @@ export function Home() {
   return (
     <>
       <section className="w-full h-screen flex items-center justify-center intro">
-        <main className="container mx-auto flex flex-col gap-6 relative z-10 text-gray-50">
+        <main className="container mx-auto px-4 sm:px-6 md:px-8 flex flex-col gap-6 relative z-10 text-gray-50">
           <h1 className="text-6xl font-bold text-shadow-2xs">
             Welkom bij Zen2Spirit
           </h1>
@@ -71,7 +71,7 @@ export function Home() {
       </div>
 
       <section id="about" className="w-full">
-        <div className="container mx-auto py-20 flex gap-15 justify-between">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-20 flex flex-wrap gap-15 justify-between">
           <div className="flex flex-col gap-6">
             <h2 className="text-4xl font-bold">Over ons</h2>
             <p>Kom meer te weten over Zen2Spirit</p>
@@ -100,7 +100,7 @@ export function Home() {
       </section>
 
       <section className="w-full py-20 bg-light-gray">
-        <div className="container mx-auto flex flex-col gap-6">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 flex flex-col gap-6">
           <h2 className="text-4xl font-bold">Onze therapieën</h2>
           <p>Ontdek onze verschillende therapieën en behandelingen</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

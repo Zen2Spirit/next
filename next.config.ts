@@ -2,7 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["scontent-bru2-1.xx.fbcdn.net"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "scontent-bru2-1.xx.fbcdn.net",
+      },
+    ],
   },
   turbopack: {
     rules: {
