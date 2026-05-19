@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 async function fetchFacebookEvents() {
   const response = await fetch(
-    `https://graph.facebook.com/v19.0/${process.env.PAGE_ID}/events?fields=name,description,place,start_time,cover&access_token=${process.env.PAGE_TOKEN}`,
+    `https://graph.facebook.com/v25.0/${process.env.PAGE_ID}/events?fields=name,description,place,start_time,cover&access_token=${process.env.PAGE_TOKEN}`,
   );
   const data = await response.json();
 
